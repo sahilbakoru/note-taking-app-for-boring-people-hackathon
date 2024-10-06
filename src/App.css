@@ -1,38 +1,121 @@
-.App {
+/* General Page Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(135deg, #effeef, #dde9fa);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1 {
   text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+  font-size: 36px;
+  font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  color: #444;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Flexbox for Note Sections */
+.note-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Editor Styling */
+.note-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* For Large Screens: Side-by-Side Layout */
+@media (min-width: 768px) {
+  .note-container {
+    flex-direction: row;
   }
-  to {
-    transform: rotate(360deg);
+
+  .note-section {
+    flex: 1;
+    margin-right: 10px;
+  }
+
+  .note-section:last-child {
+    margin-right: 0;
+  }
+}
+
+/* Editor Styling */
+.editor-section {
+  min-height: 600px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border 0.3s ease;
+}
+
+.ql-container {
+  height: 500px; /* Increased height for the editor content */
+  border-radius: 0 0 8px 8px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #fafafa;
+  overflow-y: auto;
+}
+
+/* Canvas Styling */
+.canvas-section {
+  min-height: 600px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Canvas Container */
+#graphContainer {
+  height: 600px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Drawing Toolbar Custom Styling */
+.drawing-toolbar button {
+  background-color: #008cba;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.drawing-toolbar button:hover {
+  background-color: #005f7a;
+}
+
+/* Responsive Canvas and Editor */
+@media (max-width: 768px) {
+  .editor-section, .canvas-section {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
