@@ -1,5 +1,5 @@
 # Note Taking App
-  ![Note Taking App Image](/my-app/public/image.png?raw=true)
+![image](https://github.com/user-attachments/assets/9179c758-07a5-4243-8f43-074f8537b470)
 
 This project is a **Note Taking App** that combines a **Text Editor** (Quill.js) and a **Drawing Canvas** (tldraw). It allows users to create text notes and diagrams in a seamless environment.
 
