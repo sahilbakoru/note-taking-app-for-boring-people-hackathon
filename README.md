@@ -6,7 +6,6 @@ This project is a **Note Taking App** that combines a **Text Editor** (Quill.js)
 ## Features
 - **Rich Text Editor**: Write and format notes with headings, bold/italic text, lists, and links.
 - **Drawing Canvas**: Create diagrams and sketches directly on the canvas.
-- **Save Functionality**: Save both text notes and drawings locally using `localStorage`.
 - **Design**: Simple Design for optimal user experience.
 
 ## Libraries Used
