@@ -1,4 +1,4 @@
-/* Ensure tldraw canvas and toolbar display properly */
+
 .drawing-container {
     display: flex;
     flex-direction: column;
@@ -20,7 +20,7 @@
   }
   
   .tldraw-wrapper {
-    height: 600px; /* Ensures canvas takes a reasonable space */
+    height: 600px; 
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;

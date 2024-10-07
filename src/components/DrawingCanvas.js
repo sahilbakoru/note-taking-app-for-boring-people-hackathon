@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Tldraw } from '@tldraw/tldraw';
 import 'tldraw/tldraw.css'
-// import '@tldraw/tldraw/editor.css'; // Ensure all necessary styles are loaded
-import './DrawingCanvas.css'; // Custom styles
+// import '@tldraw/tldraw/editor.css'; 
+import './DrawingCanvas.css'; 
 
 const DrawingCanvas = () => {
   const [isLoaded, setIsLoaded] = useState(false);

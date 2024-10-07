@@ -29,14 +29,14 @@ h2 {
   padding: 20px;
 }
 
-/* Flexbox for Note Sections */
+
 .note-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Editor Styling */
+
 .note-section {
   background-color: #fff;
   padding: 20px;
@@ -44,7 +44,7 @@ h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* For Large Screens: Side-by-Side Layout */
+
 @media (min-width: 768px) {
   .note-container {
     flex-direction: row;
@@ -60,7 +60,7 @@ h2 {
   }
 }
 
-/* Editor Styling */
+
 .editor-section {
   min-height: 600px;
   border: 1px solid #ddd;
@@ -70,7 +70,7 @@ h2 {
 }
 
 .ql-container {
-  height: 500px; /* Increased height for the editor content */
+  height: 500px;
   border-radius: 0 0 8px 8px;
   border: 1px solid #ddd;
   padding: 10px;
@@ -78,7 +78,7 @@ h2 {
   overflow-y: auto;
 }
 
-/* Canvas Styling */
+
 .canvas-section {
   min-height: 600px;
   border: 1px solid #ddd;
@@ -88,7 +88,7 @@ h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* Canvas Container */
+
 #graphContainer {
   height: 600px;
   width: 100%;
@@ -96,7 +96,7 @@ h2 {
   border-radius: 8px;
 }
 
-/* Drawing Toolbar Custom Styling */
+
 .drawing-toolbar button {
   background-color: #008cba;
   color: white;
@@ -112,7 +112,7 @@ h2 {
   background-color: #005f7a;
 }
 
-/* Responsive Canvas and Editor */
+
 @media (max-width: 768px) {
   .editor-section, .canvas-section {
     width: 100%;
